@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q1 Report</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <style type="text/css">
+      body {
+        background-color: #eee;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 97vh;
+        width: 100%;
+        margin: 20px auto;
+       /*  border: 2px solid red; */
+        /* box-shadow: 0 0 5px red; */
+        /* background-image: url(images/adhd_bg_corner_l.png); */
+          background-repeat: no-repeat;
+          background-position: bottom right;
+      }
+      .fullscreen {
+        background-color: #333;
+      }
+    </style>
+
+    <div class="container" id="container">
+
+    </div>
+    </body>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/html2canvas.min.js"></script>
+    <script src="js/libs/three.min.js"></script>
+    <script src="js/libs/pdf.min.js"></script>
+
+    <script src="js/libs/viewreport.min.js"></script>
+    <script type="text/javascript">
+
+    // Report {
+      var report = $('#container').FlipBook({
+         pdf: 'Community-Empowerment-Program-Report-2018-Q1_Reversed.pdf',
+         template: {
+           html: 'templates/default-book-view.html',
+           styles: [
+             'css/white-book-view.css'
+           ],
+           links: [
+             {
+               rel: 'stylesheet',
+               href: 'css/font-awesome.min.css'
+             }
+           ],
+           script: 'js/default-book-view.js'
+         },
+           propertiesCallback: function(props) {
+           props.rtl = true;
+           props.renderWhileFlipping = true;
+           return props;
+         },
+          controlsProps: { // set of optional properties that allow to customize 3D FlipBook control
+            downloadURL: 'Community-Empowerment-Program-Report-2018-Q1.pdf',
+            actions: {
+                cmdToc: { enabled: false, },
+            },
+          }
+      });
+    </script>
+
+</html>
