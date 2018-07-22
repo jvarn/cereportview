@@ -6,7 +6,7 @@
         background-color: #fff;
         margin: 0;
         padding: 0;
-          background-image: url("images/MOH-TR.png");
+          background-image: url("../images/MOH-TR.png");
           background-repeat: no-repeat;
           background-position: top right;
           background-size: 50%;
@@ -20,6 +20,7 @@
 		  color: #9B945F;
       }
       .container {
+        background-color: #fff;
         height: 97vh;
         width: 100%;
         margin: 20px auto;
