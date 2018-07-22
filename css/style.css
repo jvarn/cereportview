@@ -65,3 +65,6 @@
           background-position: top left;
           background-size: 100%;
 	  }
+	  .card {
+		  margin-bottom: 15px;
+	  }
