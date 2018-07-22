@@ -51,6 +51,7 @@
 	  }
 	  .logo {
 		  min-height: 100px;
+		  float:left;
 	  }
 	  .logo p {
 		  display: inline-block;
