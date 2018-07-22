@@ -49,3 +49,15 @@
 		  background-color: #9B945F;
 		  border-color: #9B945F;
 	  }
+	  .logo {
+		  display: inline-block;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 10%;
+		  height: 10%;
+		  background-image: url("../images/MOH-Logo.png");
+          background-repeat: no-repeat;
+          background-position: top left;
+          background-size: 50%;
+	  }
